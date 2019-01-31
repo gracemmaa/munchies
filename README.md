@@ -1,2 +1,2 @@
-# munchies
+# Munchies
 Cannabis education game
