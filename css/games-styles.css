@@ -1,0 +1,100 @@
+@import url('https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.game {
+}
+
+.card-game {
+  width: 700px;
+  height: 800px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.card {
+	width: calc(25% - 10px);
+	height: calc(33.333% - 10px);
+	margin: 5px;
+	position: relative;
+	transform: scale(1.0);
+	transform-style: preserve-3d;
+	transition: transform .3s;
+}
+
+.card:active {
+	transform: scale(0.96);
+	transition: transform .8s;
+}
+
+.card.flip {
+	transform: rotateY(180deg);
+}
+
+img.back-card, .front-card {
+  width: 155px;
+  height: 251px;
+  position: absolute;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back-card {
+	transform: rotateY(180deg);
+}
+
+.timer {
+	display: inline-block;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    width: 700px;
+}
+
+/*Modal*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal1 {
+  margin: 70px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  width: 85%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
