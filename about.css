@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 12vw;
+    margin-right: 15vw;
+}
+
+.logo {
+    display: inline-flex;
+    flex-grow: 3;
+    flex-basis: 50em auto;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.container {
+    display: flex;
+    padding-bottom: 0;
+    height: 50px;
+    align-items: center;
+    max-width: 350px;
+    justify-content: space-between;
+}
+
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    padding-top: 100px;
+}
+
+
+
+.main h1 {
+    max-width: 60vw;
+    width: 50vw;
+    min-width: 37vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.main p {
+    max-width: 60vw;
+    width: 50vw;
+    min-width: 12em;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+    font-weight: 400;
+    font-size: 17px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+
+.prov p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #59d0b0;
+}
+
+.logo {
+    display: inline-flex;
+    padding-top: 30px;
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+.title p:first-of-type {
+    margin-top: 30px;
+}
+
+.avatar {
+    height: 120px;
+    width: 120px;
+    float: left;
+    padding-right: 20px;
+}
+
+.separate{
+    padding-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    bottom: 0;
+    width: 100%;
+    background-color:#0c082b;
+    vertical-align: bottom;
+    padding: 20px 35px;
+    margin-top: 120px;
+}
+
+.footer a{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    color: #6ECEB2;
+}
+
+.bottom {
+    padding-left: 13vw;
+    padding-right: 13vw;
+    float: left;
+}
+
+#pushdown {
+    padding-top: 30px;
+}
+
+#pushup {
+    padding-bottom: 80px;
+}
+
+#hero {
+
+}
+
+#side {
+    float: right;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 30px;
+
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
